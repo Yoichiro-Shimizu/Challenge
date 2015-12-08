@@ -1,8 +1,10 @@
-<?php
-  $a = 'a';
 
-  for($i=0; $i<20; $i++)
-  {
-      echo $a;
-  }
- ?>
+  <?php
+    $str = 'A';
+
+    for($i = 0; $i < 29; $i++)
+    {
+      $str = $str.'A';
+    }
+    print $str.'A';
+   ?>
