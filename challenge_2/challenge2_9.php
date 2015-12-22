@@ -7,5 +7,5 @@
               );
   echo "<pre>";
   print_r($dic);
-  echo "<pre>";
+  echo "</pre>";
  ?>
