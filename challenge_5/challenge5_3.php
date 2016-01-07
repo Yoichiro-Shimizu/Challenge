@@ -1,19 +1,11 @@
+
 <?php
 
-    if (isset($_COOKIE["LastLogin"]) && isset($_COOKIE["visited"])){
-        $lastDate = $_COOKIE["LastLogin"];
-        $lastDate = date("Y/m/d");
-        $count = $_COOKIE["visited"] + 1;
-        echo "Last: $lastDate"."<br>";
-        echo "Counter: $count"."<br>";
-    }else{
-        $lastDate = "First";
-        $count = 1;
-        echo "Last: $lastDate"."<br>";
-        echo "Counter: $count"."<br>";
-    }
+  $acc_time = date("Y/m/d");
 
-    $login = setcookie("LastLogin",$lastDate);
-    $flag = setcookie("visited", $count);
+  setcookie("LastLoginDate", $acc_time);
 
-?>
+  $lastDate = $_COOKIE["LastLoginDate"];
+    echo "Welcome back!"."<br>";
+    echo 'Last login date is: ' . $lastDate;
+  ?>
